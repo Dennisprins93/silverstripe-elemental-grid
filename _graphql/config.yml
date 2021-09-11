@@ -1,0 +1,6 @@
+resolvers:
+  - 'DNADesign\Elemental\GraphQL\Resolvers\Resolver'
+modelConfig:
+  DataObject:
+    type_mapping:
+      TheWebmen\ElementalGrid\Extensions\BaseElementExtension: Block
