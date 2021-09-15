@@ -23,9 +23,9 @@ class BaseElementExtension extends DataExtension {
         'ColOffset' => 'Int',
     ];
 
-    public function updateBlockSchema($blockSchema)
+    public function updateBlockSchema(&$blockSchema)
     {
-        $blockSchema['ColWidth'] = 6;
-        $blockSchema['ColOffset'] = 0;
+        $blockSchema['ColWidth'] = $this->owner->ColWidth;
+        $blockSchema['ColOffset'] = $this->owner->ColOffset;
     }
 }

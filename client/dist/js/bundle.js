@@ -96,7 +96,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Injector = __webpack_require__(0);
+var _Injector = __webpack_require__(1);
 
 var _Injector2 = _interopRequireDefault(_Injector);
 
@@ -134,7 +134,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -143,14 +143,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ColumnSizing = function ColumnSizing(Element) {
   return function (props) {
     return _react2.default.createElement(
-      'div',
-      null,
+      "div",
+      { "class": "col-md-8" },
       _react2.default.createElement(Element, props),
       console.log(props.element.blockSchema),
       _react2.default.createElement(
-        'small',
+        "small",
         null,
-        'POEP'
+        "Column width: ",
+        props.element.blockSchema.ColWidth
       )
     );
   };
@@ -160,14 +161,14 @@ exports.default = ColumnSizing;
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /***/ (function(module, exports) {
 
 module.exports = Injector;
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /***/ (function(module, exports) {
 
 module.exports = React;
